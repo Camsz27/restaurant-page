@@ -6,12 +6,22 @@
 }
 
 html {
-  background-color: black;
   font-family: "Ubuntu", Helvetica, Arial, Lucida, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 #content {
   text-align: center;
+  background-color: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+#info {
+  background-image: url("./background-image.jpeg");
+  height: 969px;
 }
 
 ul {
@@ -21,16 +31,41 @@ ul {
   display: flex;
   justify-content: center;
   font-size: 25px;
-  margin: 2rem 12.5rem 2rem 6rem;
+  margin: 0rem 12.5rem 0.5rem 6rem;
 }
 
 li {
   padding: 0 7rem;
 }
 
-li:hover {
+li.header:hover {
   color: white;
   text-decoration: 4px underline;
-  text-underline-offset: 10px;
+  text-underline-offset: 6px;
   transition: all 0.6s ease-in-out;
+}
+
+ul.description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li.description {
+  min-width: 50%;
+  color: white;
+  font-size: 1rem;
+  padding-top: 7rem;
+  padding-bottom: 9.5rem;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1.description {
+  font-size: 2rem;
+}
+
+.right {
+  text-align: right;
 }
