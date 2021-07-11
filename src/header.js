@@ -5,7 +5,7 @@ const header = () => {
   const div = document.createElement("div");
   const headerContainer = document.querySelector("#content");
   const logo = document.createElement("img");
-  div.setAttribute("position", "sticky");
+  div.setAttribute("id", "sticky");
   logo.setAttribute("src", Icon);
   logo.setAttribute("alt", "salvaje-logo");
   logo.classList.add("mainLogo");
