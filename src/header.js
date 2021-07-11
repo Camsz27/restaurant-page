@@ -2,13 +2,14 @@ import Icon from "./Images/logo.png";
 
 // Creates header of the page
 const header = () => {
+  const div = document.createElement("div");
   const headerContainer = document.querySelector("#content");
   const logo = document.createElement("img");
-  headerContainer.classList.add("sticky");
+  div.setAttribute("position", "sticky");
   logo.setAttribute("src", Icon);
   logo.setAttribute("alt", "salvaje-logo");
   logo.classList.add("mainLogo");
-  headerContainer.append(logo);
+  div.append(logo);
   const headerList = document.createElement("ul");
   const restauranteHeader = document.createElement("li");
   restauranteHeader.classList.add("header");
@@ -20,7 +21,8 @@ const header = () => {
   contactoHeader.classList.add("header");
   contactoHeader.textContent = "Contacto";
   headerList.append(restauranteHeader, menuHeader, contactoHeader);
-  headerContainer.append(headerList);
+  div.append(headerList);
+  headerContainer.append(div);
 };
 
 export default header;

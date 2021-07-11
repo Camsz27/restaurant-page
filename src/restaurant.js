@@ -1,5 +1,6 @@
 // Creates the content of the landing page
 const restaurant = () => {
+  const div = document.querySelector("#content");
   const contentDivision = document.createElement("div");
   contentDivision.setAttribute("id", "info");
   const contentList1 = document.createElement("ul");
@@ -36,8 +37,7 @@ const restaurant = () => {
   contentList2.append(list21, list22);
 
   contentDivision.append(contentList1, contentList2);
-  const body = document.querySelector("body");
-  body.append(contentDivision);
+  div.append(contentDivision);
 };
 
 export default restaurant;
